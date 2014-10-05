@@ -51,13 +51,18 @@ table {
 $red: #f04e36;
 
 body,
-html {
+html,
+#intro {
     width: 100%;
     height: 100%;
 }
 
-body {
+#intro {
     background: $red;
+}
+
+#how-it-works {
+    min-height: 900px;
 }
 
 h1,
@@ -66,7 +71,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a {
     font-family: "Proxima Nova", "Avenir", sans-serif;
 }
 
@@ -92,10 +98,129 @@ p {
     position: relative;
     top: 50%;
     margin: 0 auto;
-    width: 300px;
+    width: 350px;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+.next-arrow {
+    bottom: 100px;
+    position:absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    text-decoration: none;
+    .bounce-text {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.triangle {
+    background: url("../img/triangle.png") center no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 84px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+// Bounce animation...
+// Thank you, http://codepen.io/dodozhang21/pen/siKtp
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+@mixin animation($animation) {
+  -webkit-animation: #{$animation};
+  -moz-animation: #{$animation};
+  -ms-animation: #{$animation};
+  animation: #{$animation};
+}
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  transform: $transform;
+}
+
+@include keyframes(bounce) {
+  0% {
+    @include transform(translateY(0));
+  }
+  25% {
+    @include transform(translateY(-30px));
+  }
+  50% {
+    @include transform(translateY(0));
+  }
+  75% {
+    @include transform(translateY(-20px));
+  }
+}
+
+.bounce {
+  @include animation(bounce 2.5s infinite ease-in-out);
+}
+
+#navigation {
+  background: $red;
+  opacity: 1.0;
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  transition: 0.5s;
+  li {
+    display: inline-block;
+    margin: 0;
+    a {
+      display: block;
+      padding: 20px 30px;
+      line-height: 20px;
+      color: white;
+    }
+    &.logo-nav {
+        margin-right: 25px;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        a {
+            text-decoration: none;
+        }
+    }
+    &.nav-item a {
+      font: normal 14px "Proxima Nova", sans-serif;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      &:hover {
+        color: #000b1f;
+      }
+    }
+  }
 }
 
 

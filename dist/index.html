@@ -20,9 +20,62 @@
 	</head>
 
 	<body>
-		<div class="logo">
-			<h1>bartndr</h1>
-			<h2>Because everyone deserves a drink</h2>
-		</div>
+
+    <nav class="hidden" id="navigation">
+      <ul>
+        <li class="logo-nav"><a href="#intro">bartndr</a></li>
+        <li class="nav-item"><a href="#how-it-works">How it Works</a></li>
+        <li class="nav-item"><a href="#product">The Product</a></li>
+        <li class="nav-item"><a href="#the-team">The Team</a></li>
+      </ul>
+    </nav>
+
+		<article id="intro">
+			<div class="logo">
+				<h1>bartndr</h1>
+				<h2>Because everyone deserves a drink</h2>
+			</div>
+
+			<a href="#how-it-works" class="next-arrow">
+				<h3 class="bounce-text">How it Works</h3>
+				<div class="triangle bounce"></div>
+			</a>
+		</article>
+
+		<article id="how-it-works">
+		</article>
+
+	<script src="assets/scripts/jquery-1.7.1.min.js"></script>
+	<script>
+		// Smooth scrolling source
+
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 500);
+		        return false;
+		      }
+		    }
+		  });
+		});
+
+
+		// Navigation appears
+		$(window).scroll(function() {
+		  var scrollHeight = $(document).scrollTop();
+		  var bodyHeight = $("body").height();
+		  if (scrollHeight >= bodyHeight) {
+		    $("#navigation").removeClass("hidden");
+		  } else {
+		    $("#navigation").addClass("hidden");
+		  }
+		});
+	</script>
+
 	</body>
 </html>
