@@ -257,6 +257,9 @@ a {
 
 .article-part {
     overflow: hidden;
+    &.section-2 {
+        margin-top: 100px;
+    }
 }
 
 .section-subheader {

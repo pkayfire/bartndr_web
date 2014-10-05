@@ -266,6 +266,8 @@ a {
 
 .article-part {
   overflow: hidden; }
+  .article-part.section-2 {
+    margin-top: 100px; }
 
 .section-subheader {
   color: #f04e36;
