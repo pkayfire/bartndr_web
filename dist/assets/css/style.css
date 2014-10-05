@@ -55,7 +55,7 @@ html,
   background: #f04e36; }
 
 #how-it-works {
-  padding-top: 120px; }
+  padding-top: 50px; }
 
 article {
   margin-bottom: 100px; }
@@ -241,31 +241,62 @@ a {
       #navigation li.nav-item a:hover {
         color: #000b1f; }
 
-.section-header,
-.section-subheader {
+#how-it-works {
   text-align: center; }
+  #how-it-works img {
+    max-width: 100%;
+    display: inline-block; }
+  #how-it-works .left {
+    width: 50%; }
+  #how-it-works .right {
+    margin-left: 2%;
+    width: 48%; }
+  #how-it-works .text {
+    text-align: left;
+    width: 450px;
+    float: right;
+    padding: 50px 0; }
+  #how-it-works .left,
+  #how-it-works .right {
+    float: left; }
+
+.article-part {
+  overflow: hidden; }
 
 .section-subheader {
   color: #f04e36;
   font-size: 30px;
   font-weight: bold; }
 
+.section-paragraph {
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 28px;
+  color: #777; }
+
 .section-header {
-  color: #f04e36;
+  color: #333132;
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 40px; }
 
-#how-it-works {
-  text-align: center; }
-  #how-it-works img {
-    max-width: 100%;
-    display: inline-block; }
+.number {
+  color: #f04e36;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 50px;
+  border: 4px solid #f04e36;
+  padding: 10px;
+  width: 27px;
+  height: 27px;
+  display: inline-block;
+  margin-bottom: 5px; }
 
 #team {
   margin-bottom: 0;
-  padding: 0; }
+  padding: 0;
+  text-align: center; }
   #team h1.section-header {
     margin: 0;
     background: #f04e36;
@@ -297,6 +328,11 @@ a {
         width: 200px; }
     #team .team-images #elizabeth {
       margin-right: 0; }
+
+#footer {
+  height: 20px;
+  background: #f04e36;
+  margin-bottom: 0; }
 
 @media screen and (max-width: 400px) {
   .logo {
