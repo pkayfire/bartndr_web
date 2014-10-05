@@ -185,7 +185,7 @@ a {
 }
 
 #navigation {
-  background: $red;
+  background: rgba(250, 78, 54, 0.8);
   opacity: 1.0;
   &.hidden {
     opacity: 0;
@@ -360,17 +360,19 @@ a {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     #how-it-works {
         padding: 0;
     }
     .left,
     .right {
     width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+    padding: 20px 0;
+    
         .text {
+            padding: 0 20px;
             width: 100%;
+            box-sizing: border-box;
         }
     }
 }

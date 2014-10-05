@@ -206,7 +206,7 @@ a {
   animation: bounce 2.5s infinite ease-in-out; }
 
 #navigation {
-  background: #f04e36;
+  background: rgba(250, 78, 54, 0.8);
   opacity: 1.0;
   position: fixed;
   top: 0;
@@ -347,18 +347,19 @@ a {
       font-size: 38px; }
     .logo h2 {
       font-size: 14px; } }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   #how-it-works {
     padding: 0; }
 
   .left,
   .right {
     width: 100%;
-    padding: 20px;
-    box-sizing: border-box; }
+    padding: 20px 0; }
     .left .text,
     .right .text {
-      width: 100%; } }
+      padding: 0 20px;
+      width: 100%;
+      box-sizing: border-box; } }
 @media screen and (max-width: 480px) {
   #navigation {
     display: none; }
