@@ -429,5 +429,12 @@ a {
   .next-arrow {
     bottom: 25px;
   }
+  .section-2 {
+    .section-paragraph {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+  }
 }
 

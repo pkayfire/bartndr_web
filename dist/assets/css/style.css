@@ -397,6 +397,11 @@ a {
     margin-top: 20px; }
 
   .next-arrow {
-    bottom: 25px; } }
+    bottom: 25px; }
+
+  .section-2 .section-paragraph {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; } }
 
 /*# sourceMappingURL=style.css.map */
