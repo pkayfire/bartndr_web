@@ -47,6 +47,15 @@ table {
     border-spacing: 0;
 }
 
+#in-action {
+    text-align: center;
+}
+
+iframe {
+    display: inline-block;
+    width: 560px;
+}
+
 // Defining colors
 $red: #f04e36;
 $gray: #333132;

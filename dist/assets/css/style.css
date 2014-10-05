@@ -45,6 +45,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+#in-action {
+  text-align: center; }
+
+iframe {
+  display: inline-block;
+  width: 560px; }
+
 body,
 html,
 #intro {
@@ -121,84 +128,100 @@ a {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0); }
+
   25% {
     -webkit-transform: translateY(-30px);
     -moz-transform: translateY(-30px);
     -ms-transform: translateY(-30px);
     transform: translateY(-30px); }
+
   50% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0); }
+
   75% {
     -webkit-transform: translateY(-20px);
     -moz-transform: translateY(-20px);
     -ms-transform: translateY(-20px);
     transform: translateY(-20px); } }
+
 @-moz-keyframes bounce {
   0% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0); }
+
   25% {
     -webkit-transform: translateY(-30px);
     -moz-transform: translateY(-30px);
     -ms-transform: translateY(-30px);
     transform: translateY(-30px); }
+
   50% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0); }
+
   75% {
     -webkit-transform: translateY(-20px);
     -moz-transform: translateY(-20px);
     -ms-transform: translateY(-20px);
     transform: translateY(-20px); } }
+
 @-ms-keyframes bounce {
   0% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0); }
+
   25% {
     -webkit-transform: translateY(-30px);
     -moz-transform: translateY(-30px);
     -ms-transform: translateY(-30px);
     transform: translateY(-30px); }
+
   50% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0); }
+
   75% {
     -webkit-transform: translateY(-20px);
     -moz-transform: translateY(-20px);
     -ms-transform: translateY(-20px);
     transform: translateY(-20px); } }
+
 @keyframes bounce {
   0% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0); }
+
   25% {
     -webkit-transform: translateY(-30px);
     -moz-transform: translateY(-30px);
     -ms-transform: translateY(-30px);
     transform: translateY(-30px); }
+
   50% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0); }
+
   75% {
     -webkit-transform: translateY(-20px);
     -moz-transform: translateY(-20px);
     -ms-transform: translateY(-20px);
     transform: translateY(-20px); } }
+
 .bounce {
   -webkit-animation: bounce 2.5s infinite ease-in-out;
   -moz-animation: bounce 2.5s infinite ease-in-out;
@@ -403,5 +426,3 @@ a {
     width: 100%;
     padding: 20px;
     box-sizing: border-box; } }
-
-/*# sourceMappingURL=style.css.map */
