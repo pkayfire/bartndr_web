@@ -55,7 +55,10 @@ html,
   background: #f04e36; }
 
 #how-it-works {
-  min-height: 900px; }
+  padding-top: 120px; }
+
+article {
+  margin-bottom: 100px; }
 
 h1,
 h2,
@@ -237,5 +240,86 @@ a {
       text-decoration: none; }
       #navigation li.nav-item a:hover {
         color: #000b1f; }
+
+.section-header,
+.section-subheader {
+  text-align: center; }
+
+.section-subheader {
+  color: #f04e36;
+  font-size: 30px;
+  font-weight: bold; }
+
+.section-header {
+  color: #f04e36;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 40px; }
+
+#how-it-works {
+  text-align: center; }
+  #how-it-works img {
+    max-width: 100%;
+    display: inline-block; }
+
+#team {
+  margin-bottom: 0;
+  padding: 0; }
+  #team h1.section-header {
+    margin: 0;
+    background: #f04e36;
+    color: white;
+    padding: 150px 0; }
+  #team .team-images {
+    text-align: center;
+    margin: 20px 0; }
+    #team .team-images .team-card {
+      display: inline-block;
+      margin-right: 20px;
+      margin-bottom: 10px; }
+      #team .team-images .team-card h2,
+      #team .team-images .team-card a {
+        margin-top: 10px;
+        font-size: 21px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #f04e36;
+        margin-bottom: 3px; }
+        #team .team-images .team-card h2:hover,
+        #team .team-images .team-card a:hover {
+          opacity: 0.8; }
+      #team .team-images .team-card h4 {
+        font-size: 15px; }
+      #team .team-images .team-card img {
+        height: 200px;
+        width: 200px; }
+    #team .team-images #elizabeth {
+      margin-right: 0; }
+
+@media screen and (max-width: 400px) {
+  .logo {
+    width: 300px; }
+    .logo h1 {
+      font-size: 38px; }
+    .logo h2 {
+      font-size: 14px; } }
+@media screen and (max-width: 1000px) {
+  .headline,
+  .details {
+    width: 100%; } }
+@media screen and (max-width: 480px) {
+  #navigation {
+    display: none; }
+
+  .title-box {
+    width: 300px; }
+
+  #how-it-works {
+    margin-top: 20px; }
+
+  .triangle {
+    bottom: 50px; } }
 
 /*# sourceMappingURL=style.css.map */
