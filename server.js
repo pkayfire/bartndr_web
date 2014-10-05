@@ -8,6 +8,8 @@ router.use(function(req, res, next) {
   next();
 });
 
+global.setImmediate = global.setImmediate || process.nextTick.bind(process)
+
 
 app.use(express.static(__dirname + '/dist/'));
 
