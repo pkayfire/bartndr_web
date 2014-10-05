@@ -235,23 +235,24 @@ a {
         max-width: 100%;
         display: inline-block;
     }
-    .left {
-        width: 50%;
-    }
-    .right {
-        margin-left: 2%;
-        width: 48%;
-    }
-    .text {
-        text-align: left;
-        width: 450px;
-        float: right;
-        padding: 50px 0;
-    }
-    .left,
-    .right {
-        float: left;
-    }
+}
+
+.left {
+    width: 50%;
+}
+.right {
+    margin-left: 2%;
+    width: 48%;
+}
+.text {
+    text-align: left;
+    width: 450px;
+    float: right;
+    padding: 50px 0;
+}
+.left,
+.right {
+    float: left;
 }
 
 .article-part {
@@ -357,10 +358,18 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
-  .headline,
-  .details {
+    #how-it-works {
+        padding: 0;
+    }
+    .left,
+    .right {
     width: 100%;
-  }
+    padding: 20px;
+    box-sizing: border-box;
+    .text {
+        width: 100%;
+    }
+    }
 }
 
 @media screen and (max-width: 480px) {
