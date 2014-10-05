@@ -264,10 +264,23 @@ a {
 .right {
   float: left; }
 
+.image-3 {
+  width: 250px; }
+
 .article-part {
   overflow: hidden; }
   .article-part.section-2 {
     margin-top: 100px; }
+  .article-part.section-3 {
+    margin-top: 100px; }
+    .article-part.section-3 .left {
+      margin-right: 2%;
+      width: 48%; }
+    .article-part.section-3 .right {
+      width: 50%;
+      margin-left: 0; }
+    .article-part.section-3 .text {
+      float: left; }
 
 .section-subheader {
   color: #f04e36;

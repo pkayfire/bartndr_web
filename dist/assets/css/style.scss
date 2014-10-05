@@ -255,10 +255,28 @@ a {
     float: left;
 }
 
+.image-3 {
+    width: 250px;
+}
+
 .article-part {
     overflow: hidden;
     &.section-2 {
         margin-top: 100px;
+    }
+    &.section-3 {
+        margin-top: 100px;
+        .left {
+            margin-right: 2%;
+            width: 48%;
+        }
+        .right {
+            width: 50%;
+            margin-left: 0;
+        }
+        .text {
+            float: left;
+        }
     }
 }
 
