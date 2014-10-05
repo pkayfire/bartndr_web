@@ -283,6 +283,20 @@ a {
     margin-bottom: 40px;
 }
 
+.centered-image {
+    display: inline-block;
+    width: 300px;
+}
+
+.section-2 {
+    .section-paragraph {
+        width: 400px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+}
+
 .number {
     color: $red;
     font-weight: bold;
@@ -358,6 +372,13 @@ a {
             font-size: 14px;
         }
     }
+}
+
+@media screen and (max-width: 880px) {
+    .text {
+        width: 390px;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
